@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dr Nadim Albanna Dental Clinic</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+		<div class="sticky">
+			<header>
+        <h1>Dr. Nadim Albanna Dental Clinic</h1>
+		<nav>
+			<ul>
+				<li><a href="#home"  style="width:20%" >Home</a></li>
+				<li><a href="#aboutus"  style="width:20%" >About Us</a></li>
+				<li><a href="#Services" style="width:20%" >Services</a></li>
+				<li><a href="#gallery"  style="width:20%" >Gallery</a></li>
+				<li><a href="#Location"  style="width:20%" >Location</a></li>
+                <li><a href="#Openinghours"  style="width:20%" >Opening hours</a></li>
+                <li><a href="#contactus"  style="width:20%" >Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form class="search" action="action_page.php" >
+		<input type="text" placeholder="Search.." name="search">
+		<button type="submit"><i class="fa fa-search"></i></button>
+	  </form>
+	</div>
+	<main>
+		<section class="banner" id="roundedradius" >
+			<h2>Welcome to our Dental Clinic</h2>
+		</section>
+
+		<section class="about-us" id="aboutus">
+			<h2>About Us</h2>
+			<p>Dr. Nadim Albanna's Dental Clinic is a private clinic located in Saoufar Mount Lebanon, held by Dr. Nadim Albanna, dedicated to providing the best possible care for your teeth and gums.</p>
+		</section>
+		<section class="services" id="Services">
+			<h2>Our Services</h2>
+			<ul>
+				<li>Preventive Dentistry & Fillings</li>
+				<li>Extractions</li>
+				<li>Root Canal Treatment</li>
+				<li>Crowns & Bridges</li>
+				<li>Dentures</li>
+				<li>Office & Home Whitening</li>
+			</ul>
+		</section>
+		<section class="gallery" id="gallery">
+			<h2>Gallery</h2>
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade" >
+			  <div class="numbertext">1 / 4</div>
+			  <img src="img1.jpg"  style="width:100%">
+			  <div class="text"></div>
+			</div>
+		  
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 4</div>
+			  <img src="imag2.jpg" style="width:100%">
+			  <div class="text"></div>
+			</div>
+		  
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 4</div>
+			  <img src="img3.jpg" style="width:70%">
+			  <div class="text"></div>
+			</div>
+		  
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="img4.jpg" style="width:920px;">
+				<div class="text"></div>
+			  </div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  </div>
+		</section>
+		  <br>
+		  
+		  <!-- The dots/circles -->
+		  <div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		  </div>
+		  <div class="container">
+			<img src="smile.jpg"  style="width: 930px; height: 200px;" id="roundedradius" >
+			<div class="left"><i>"A Smile is the best thing you can wear."</i></div>
+			</div>
+		<section class="location" id="Location">
+			<h2>Location</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11152.293343193713!2d35.69383431287164!3d33.79691275344087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3b9d43216ea5%3A0xd26895c9d30c89a7!2sDr.%20Nadim%20Albanna%20Dental%20clinic!5e0!3m2!1sen!2slb!4v1681210917735!5m2!1sen!2slb" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+        <section class="openinghours" id="Openinghours">
+           <h2>Opening Hours</h2>
+           <p>Monday&nbsp;&nbsp;&nbsp;&nbsp;9:00am - 4:00pm</p>
+           <p>Tuesday&nbsp;&nbsp;&nbsp;&nbsp;9:00am - 4:00pm</p>
+           <p>Wednesday&nbsp;&nbsp;&nbsp;&nbsp;9:00am - 4:00pm</p>
+           <p>Thursday&nbsp;&nbsp;&nbsp;&nbsp;9:00am - 4:00pm</p>
+           <p>Friday&nbsp;&nbsp;&nbsp;&nbsp;9:00am - 2:00pm</p>
+		   <p>Saturday&nbsp;&nbsp;&nbsp;&nbsp;9:00am - 2:00pm</p>
+        </ul>
+        </section>
+		<section class="contact-us" id="contactus">
+			<h2>Contact Us</h2>
+			<form action="contact.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+		<h4>Phone number:</h4>
+		<br>
+		<section class="phone">+961 76 979 640</section>
+		<?php if(mail("jamal.banna12@gmail.com", "Subject: $subject",$message, "From: $email" )){
+			header("location: index.php?status=1");
+		 }else{ 
+			header("location: index.php?status=0");
+		 }
+		 ?>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Dental Clinic. All rights reserved.</p>
+	</footer>
+</body>
+</html>
